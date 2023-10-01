@@ -1,0 +1,71 @@
+{
+  "$schema": "http://localhost:3000/schemas/v1.json",
+  "name": "basic-component",
+  "namespace": "cg-test",
+  "displayName": "Basic Component",
+  "description": "Basic example component",
+  "version": "0.0.2",
+  "mainFunction": "main",
+
+  "icon": {
+    "id": "note",
+    "color": {
+      "type": "hex",
+      "value": "#eeee66"
+    }
+  },
+
+  "functions": [
+    {
+      "name": "main",
+      "entry": "main.js",
+      "input": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "text": {
+            "type": "string",
+            "title": "Basic text input"
+          }
+        }
+      },
+      "output": {
+        "responseType": "html",
+        "staticFiles": [
+          {
+            "location": "header",
+            "file": {
+              "type": "css",
+              "filepath": "default.css"
+            }
+          },
+          {
+            "location": "footer",
+            "file": {
+              "type": "js",
+              "filepath": "default.js"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "previews": {
+    "default": {
+      "functionData": {
+        "main": {
+          "inputData": {
+            "type": "file",
+            "path": "previews/example.data.json"
+          },
+          "wrapper": {
+            "path": "previews/preview.html"
+          }
+        }
+      }
+    }
+  },
+  "staticFiles": {
+    "locationRoot": "static"
+  }
+}
