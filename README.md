@@ -31,7 +31,7 @@ npm i -g @squiz/dxp-cli-next
 ### login to the DXP
 
 ```
-dxp-next auth login --tenant=___TENNENT_ID_HERE___
+dxp-next auth login --tenant=___TENENT_ID_HERE___
 ```
 
 ### deploy a component or update

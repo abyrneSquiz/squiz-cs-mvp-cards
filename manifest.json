@@ -4,7 +4,7 @@
   "namespace": "cg-test",
   "displayName": "Basic Component",
   "description": "Basic example component",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "mainFunction": "main",
 
   "icon": {
