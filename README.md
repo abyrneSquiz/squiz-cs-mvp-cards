@@ -1,4 +1,4 @@
-# cs MVP
+# Component Service MVP
 
 This is a sample show the minimum reaquirements for a Component in the Squiz DXP.
 The full help documentation can be found in the [component service developer documentation](https://docs.squiz.net/component-service/latest/index.html)
@@ -13,9 +13,20 @@ The full help documentation can be found in the [component service developer doc
 
 [Static folder](https://docs.squiz.net/component-service/latest/getting-started/file-structure.html#static-files) - Al required resources to make the componet work. files can be compiled here but should be web ready.
 
+---
 
 
+### install dxp cli tools
+```
+npm i -g @squiz/dxp-cli-next
+```
 
+
+## test
+
+```
+dxp-next cmp dev ./
+```
 
 ## Deploy
 
@@ -23,10 +34,6 @@ To deploy a component to the Squiz DXP you will require :
 - a DXP console login 
 - dxp-next installed
 
-### install dxp cli tools
-```
-npm i -g @squiz/dxp-cli-next
-```
 
 ### login to the DXP
 
