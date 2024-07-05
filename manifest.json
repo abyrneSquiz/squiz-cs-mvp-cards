@@ -3,10 +3,9 @@
   "name": "basic-component",
   "namespace": "cg-test",
   "displayName": "Basic Component",
-  "description": "Basic example component",
+  "description": "Basic example card component",
   "version": "0.0.2",
   "mainFunction": "main",
-
   "icon": {
     "id": "note",
     "color": {
@@ -30,6 +29,25 @@
           "bodyText": {
             "type": "FormattedText",
             "description": "The Body text to be formatted"
+          },
+          "cards":{
+            "type": "array",
+            "items": {
+                "title": "card",
+                "type": "object",
+                "description": "Image and text card",
+                "properties": {
+                  "cardText": {
+                      "type": "string"
+                  },
+                  "cardImage": {
+                    "title": "Example image",
+                    "type": "SquizImage",
+                    "description": "The image to show"
+                  } 
+                },
+                "required": []
+            }
           }
         }
       },
