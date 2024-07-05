@@ -14,8 +14,6 @@ module.exports = async function (input, info) {
 
 var cardArray = input.cards;
 
-
-
   return `
   <main>
   <section class="py-5 text-center container">

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@squiz/dxp-cli-next": "^5.14.0"
+  }
+}
